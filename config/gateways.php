@@ -1,0 +1,17 @@
+<?php
+
+return [
+    'gateway1' => [
+        'base_url' => env('GATEWAY1_BASE_URL', 'http://localhost:3001'),
+        'email' => env('GATEWAY1_EMAIL', 'dev@betalent.tech'),
+        'token' => env('GATEWAY1_TOKEN', 'FEC9BB078BF338F464F96B48089EB498'),
+        'cache_ttl' => env('GATEWAY1_TOKEN_TTL', 3600),
+    ],
+
+    'gateway2' => [
+        'base_url' => env('GATEWAY2_BASE_URL', 'http://localhost:3002'),
+        'auth_token' => env('GATEWAY2_AUTH_TOKEN', 'tk_f2198cc671b5289fa856'),
+        'auth_secret' => env('GATEWAY2_AUTH_SECRET', '3d15e8ed6131446ea7e3456728b1211f'),
+    ],
+];
+
