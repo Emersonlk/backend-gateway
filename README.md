@@ -57,6 +57,12 @@ As URLs internas usadas pela aplicação são:
 - Gateway 1: `http://gateways-mock:3001`
 - Gateway 2: `http://gateways-mock:3002`
 
+Seeders para popular o banco.
+
+```bash
+docker-compose exec app php artisan db:seed --class=DatabaseSeeder
+```
+
 ## Rotas principais
 
 ### Públicas
